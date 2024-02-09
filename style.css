@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url(https://source.unsplash.com/1920x1080/?landscape);
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+
+}
+
+
+button {
+
+    font-size: 80px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+button:hover {
+    transition: all .5s ease-in-out;
+    opacity: .5;
+
+}
+
+button:active {
+    transition: all .2s ease-in-out;
+    opacity: .2
+}
+
+.botoes {
+    display: flex;
+    gap: 16px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.pontuação {
+    background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animataion 2s infinite linear;
+}
+
+@keyframes animataion {
+    0% {color: #ff0000;
+    }
+
+    14% {color: #7e0000;
+    }
+
+    29% {color: #ffff00;
+    }
+
+    43% {color: #00ff00;
+    }
+
+    57% {color: #00ff59;
+    }
+
+    71% {color: #7608c5;
+    }
+
+    86% {color: #8a2be2;
+    }
+
+    100% {color: #ff0000;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+
+    h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 0px;
+    }
+
+    button {
+
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    h1 {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 0px;
+    }
+
+    button {
+
+        font-size: 45px;
+    }
+}
