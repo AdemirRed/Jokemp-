@@ -10,21 +10,26 @@ const botaoAutoPlay = document.getElementById("autoPlay")
 const parar = document.getElementById("stop")
 const limpar = document.getElementById("clear")
 
+const GAME_OPTIONS = {
+    PEDRA: "pedra",
+    PAPEL: "papel",
+    TESOURA: "tesoura"
+}
 
 let pontos1 = 0
 let pontos2 = 0
 let pontosEmpate = 0
 
-const escolhasPossiveis = ["pedra", "papel", "tesoura"];
+const escolhasPossiveis = [GAME_OPTIONS.PEDRA, GAME_OPTIONS.PAPEL, GAME_OPTIONS.TESOURA];
 
 pedra.addEventListener("click", () => {
-    jogo("pedra");
+    jogo(GAME_OPTIONS.PEDRA);
 });
 papel.addEventListener("click", () => {
-    jogo("papel");
+    jogo(GAME_OPTIONS.PAPEL);
 });
 tesoura.addEventListener("click", () => {
-    jogo("tesoura");
+    jogo(GAME_OPTIONS.TESOURA);
 });
 
 
@@ -44,9 +49,9 @@ function jogo(escolhaHumano) {
 
         //Metodo para quando o humano ganha
         //Parte do humano
-    } else if ((escolhaHumano == "pedra" && escolhaBoot == "tesoura") ||
-        (escolhaHumano == "papel" && escolhaBoot == "pedra") ||
-        (escolhaHumano == "tesoura" && escolhaBoot == "papel")
+    } else if ((escolhaHumano == GAME_OPTIONS.PEDRA && escolhaBoot == GAME_OPTIONS.TESOURA) ||
+        (escolhaHumano == GAME_OPTIONS.PAPEL && escolhaBoot == GAME_OPTIONS.PEDRA) ||
+        (escolhaHumano == GAME_OPTIONS.TESOURA && escolhaBoot == GAME_OPTIONS.PAPEL)
     ) {
         pontos1++;
         seusPontos.innerText = pontos1; // Corrigido
@@ -78,9 +83,9 @@ function jogoAutomatico(escolhaHumano) {
 
         //Metodo para quando o humano ganha
         //Parte do humano
-    } else if ((escolhaHumano == "pedra" && escolhaBoot == "tesoura") ||
-        (escolhaHumano == "papel" && escolhaBoot == "pedra") ||
-        (escolhaHumano == "tesoura" && escolhaBoot == "papel")
+    } else if ((escolhaHumano == GAME_OPTIONS.PEDRA && escolhaBoot == GAME_OPTIONS.TESOURA) ||
+        (escolhaHumano == GAME_OPTIONS.PAPEL && escolhaBoot == GAME_OPTIONS.PEDRA) ||
+        (escolhaHumano == GAME_OPTIONS.TESOURA && escolhaBoot == GAME_OPTIONS.PAPEL)
     ) {
         pontos1++;
         seusPontos.innerText = pontos1; // Corrigido
