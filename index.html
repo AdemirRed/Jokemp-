@@ -16,11 +16,18 @@
             <button id="papel">&#x1F590</button>
             <button id="tesoura">&#x270C</button>
         </div>
-        <p class="Resultado"></p><br>
+        <p id="loadingDiv" class="Resultado"></p><br>
+
+
 
         <p>Sua Pontuação: <span id="seusPontos" class="pontuação">0</span> </p>
         <p>Pontuação Boot: <span id="pontosBoot" class="pontuação">0</span> </p>
         <p>Pontuação Empatados: <span id="empate" class="pontuação">0</span> </p>
+        <div>
+            <button id="autoPlay" class="autoPlay" onclick="start()">Auto Play</button>
+            <button id="stop" class="autoPlay stopAutoPlay" onclick="stop()">Stop Play</button>
+        </div>
+        <button id="clear" class="autoPlay stopAutoPlay" onclick="reiniciar()">Reiniciar</button>
 
     </div>
 </body>
