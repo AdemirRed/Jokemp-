@@ -28,7 +28,6 @@ body {
 
 }
 
-
 button {
 
     font-size: 80px;
@@ -52,7 +51,27 @@ button:active {
 .botoes {
     display: flex;
     gap: 16px;
+
 }
+
+.autoPlay {
+    margin-top: 15px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff59;
+    text-shadow: 10px 5px 5px #02832f;
+    margin-right: 3px;
+
+}
+
+.stopAutoPlay {
+    text-shadow: 10px 5px 5px rgb(164, 1, 1);
+
+    color: #ff0000;
+}
+
 
 h1 {
     font-weight: bold;
@@ -72,28 +91,36 @@ p {
 }
 
 @keyframes animataion {
-    0% {color: #ff0000;
+    0% {
+        color: #ff0000;
     }
 
-    14% {color: #7e0000;
+    14% {
+        color: #7e0000;
     }
 
-    29% {color: #ffff00;
+    29% {
+        color: #ffff00;
     }
 
-    43% {color: #00ff00;
+    43% {
+        color: #00ff00;
     }
 
-    57% {color: #00ff59;
+    57% {
+        color: #00ff59;
     }
 
-    71% {color: #7608c5;
+    71% {
+        color: #7608c5;
     }
 
-    86% {color: #8a2be2;
+    86% {
+        color: #8a2be2;
     }
 
-    100% {color: #ff0000;
+    100% {
+        color: #ff0000;
     }
 }
 
